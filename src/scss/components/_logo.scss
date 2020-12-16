@@ -1,0 +1,19 @@
+.logo {
+  width: calc(var(--logo-size) + 1vw);
+  height: calc(var(--logo-size) + 1vw);
+  background-color: var(--logo-background-color);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--heading-font);
+}
+.fa-reddit-alien {
+  color: var(--logo-color);
+  font-size: calc(calc(var(--logo-size) - 0.5rem) + 1vw);
+}
+.logo-font {
+  padding-left: 0.7vw;
+  font-size: clamp(1.4rem, 2vw, 3rem);
+  color: var(--logo-text-color);
+}

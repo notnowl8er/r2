@@ -1,0 +1,23 @@
+:root {
+  --text-font: "Poppins", sans-serif;
+  --heading-font: "Mulish", sans-serif;
+  --logo-size: 1.2rem;
+  --orange: rgb(253, 69, 0);
+  --grey-1: rgb(70, 72, 85);
+  --grey-2: rgb(128, 128, 128);
+  --grey-3: rgb(137, 142, 162);
+  --white-1: rgb(244, 245, 250);
+  --white-2: rgb(255, 255, 255);
+  --blue-1: rgb(138, 145, 255);
+  --blue-2: rgb(102, 110, 232);
+  --black-1: rgb(0, 0, 0);
+  /* VARIABLES -- THEME: LIGHT MODE */
+  --logo-color: var(--white-2);
+  --logo-background-color: var(--orange);
+  --logo-text-color: var(--grey-2);
+}
+
+// VARIABLES -- THEME: DARK MODE
+[data-theme="dark"] {
+  --logo-background-color: var(--black-1);
+}

@@ -1,0 +1,17 @@
+#skip {
+  position: absolute;
+  top: -100%;
+  transition: top 0.2s;
+  &:focus {
+    top: 0;
+  }
+}
+
+.home {
+  display: grid;
+  grid-template-columns: minmax(min-content, auto) 100vw;
+  grid-template-rows: 100vh;
+  height: 100vh;
+  width: 100vh;
+  overflow: hidden;
+}

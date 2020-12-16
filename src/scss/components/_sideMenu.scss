@@ -1,0 +1,74 @@
+.sideMenu {
+  grid-template-columns: 1/2;
+  grid-template-rows: 1/2;
+
+  @include media("<phone") {
+    position: relative;
+    left: -100%;
+  }
+
+  &__top {
+    margin-right: 2rem;
+    height: max-content;
+    &-logo {
+      display: flex;
+      align-items: center;
+      margin: 2rem;
+    }
+    &-searchBar {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      width: calc(100% + 1rem);
+      input {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding: 0.45rem 0.5rem;
+        border: 0.2rem solid var(--white-1);
+        border-radius: 0 1rem 1rem 0;
+        &:focus {
+          outline: none;
+          border-radius: 0 1rem 1rem 0;
+          border: 0.1rem solid var(--grey-1);
+        }
+      }
+      i {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: end;
+        align-self: center;
+        font-size: 0.9rem;
+        padding-right: 0.5rem;
+        color: var(--grey-2);
+      }
+    }
+    &-feed {
+      border-bottom: 0.2rem solid var(--white-1);
+      width: calc(100% + 2rem);
+      ul {
+        padding: 2rem;
+        li {
+          cursor: pointer;
+          width: max-content;
+        }
+        li:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+  &__bottom {
+    height: 54%;
+    margin: 2rem;
+    overflow-y: scroll;
+    ul {
+      li {
+        width: max-content;
+        cursor: pointer;
+      }
+      li:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

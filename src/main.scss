@@ -1,0 +1,11 @@
+@import "./scss/abstract/variables";
+@import "./scss/abstract/mixins";
+
+@import "./scss/base/reset";
+@import "./scss/base/typography";
+
+@import "./scss/components/logo";
+@import "./scss/components/sideMenu";
+@import "./scss/components/toggleSwitch";
+
+@import "./scss/layout/home";
